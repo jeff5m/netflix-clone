@@ -126,3 +126,11 @@ main .highlighted-media .container .description p span {
 main .highlighted-media .container .button i {
   margin-right: 8px;
 }
+
+/* === CAROUSEL IMGS === */
+
+.media-carousel .owl-carousel .item .media-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
