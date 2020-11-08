@@ -1,3 +1,43 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --categories: #aaa;
+  --categories-hover: #fff;
+}
+
 * {
-  background-color: #aaa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  margin-left: 5px;
+  
+  color: var(--red);
+  font-family: 'Arial Black', 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+header .container nav a {
+  color: var(--categories);
+  text-decoration: none;
+  margin-right: 10px;
+
+  transition: 200ms;
+}
+
+header .container nav a:hover {
+  color: var(--categories-hover);
 }
