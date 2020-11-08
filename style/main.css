@@ -54,11 +54,11 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 0 2% 0;
 }
 
 header .container .logo {
-  margin-left: 5px;
-
   color: var(--red);
   font-family: 'Arial Black', 'Times New Roman', Times, serif;
   font-size: 40px;
@@ -74,6 +74,10 @@ header .container nav a {
 
 header .container nav a:hover {
   color: var(--categories-hover);
+}
+
+header .container nav a:last-child {
+  margin-right: 0;
 }
 
 /* === HIGHLIGHTED MEDIA === */
