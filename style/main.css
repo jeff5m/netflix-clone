@@ -3,6 +3,8 @@
   --black: #141414;
   --categories: #aaa;
   --categories-hover: #fff;
+  --media-title: #fff;
+  --text-highlighted: #8596A3;
 }
 
 * {
@@ -14,7 +16,10 @@
 body {
   background-color: var(--black);
   font-family: 'Times New Roman', Times, serif;
+  color: var(--media-title);
 }
+
+/* === NAV MENU === */
 
 header .container {
   display: flex;
@@ -24,7 +29,7 @@ header .container {
 
 header .container .logo {
   margin-left: 5px;
-  
+
   color: var(--red);
   font-family: 'Arial Black', 'Times New Roman', Times, serif;
   font-size: 40px;
@@ -40,4 +45,38 @@ header .container nav a {
 
 header .container nav a:hover {
   color: var(--categories-hover);
+}
+
+/* === HIGHLIGHTED MEDIA === */
+
+main .highlighted-media {
+  font-size: 16px;
+  
+  background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.50) 100%),
+    url('../assets/stranger-things.jpg');
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .highlighted-media .container .title {
+  font-size: 40px;
+}
+
+main .highlighted-media .container .description {
+  margin-bottom: 40px;
+}
+
+main .highlighted-media .container .description p:nth-child(1),
+main .highlighted-media .container .description p:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+main .highlighted-media .container .description p span {
+  color: var(--text-highlighted);
 }
