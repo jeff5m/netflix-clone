@@ -1,0 +1,36 @@
+@media screen and (max-width: 700px) {
+  .button {
+    margin-top: 2%;
+  }
+
+  main .highlighted-media .container button:first-child {
+    margin-top: 25%;
+  }
+  
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header .container nav {
+    margin-bottom: 1%;
+  }
+
+  main .highlighted-media .container .description p:first-child {
+    display: none;
+  }
+
+  main .highlighted-media .container .description p:nth-child(2) {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  main .highlighted-media .container .description p:first-child {
+    display: block;
+  }
+
+  main .highlighted-media .container button:first-child {
+    margin-top: initial;
+  }
+}
