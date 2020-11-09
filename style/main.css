@@ -90,6 +90,7 @@ main .highlighted-media {
     url('../assets/stranger-things.jpg');
   height: 600px;
   background-size: cover;
+  background-position: center;
 
   display: flex;
   flex-direction: column;
