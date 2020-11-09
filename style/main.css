@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 :root {
   --red: #e50914;
   --black: #141414;
@@ -21,7 +23,7 @@
 
 body {
   background-color: var(--black);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Nunito', sans-serif;
   color: var(--media-title);
 }
 
@@ -33,6 +35,7 @@ body {
 
   padding: 15px 30px;
   margin-right: 15px;
+  width: 210px;
 
   border-radius: 4px;
 
@@ -83,20 +86,25 @@ header .container nav a:last-child {
 
 /* === HIGHLIGHTED MEDIA === */
 
+main {
+  margin: 0 auto 1%;
+}
+
 main .highlighted-media {
   font-size: 16px;
   
   background:
     linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.50) 100%),
     url('../assets/stranger-things.jpg');
-  height: 600px;
+  height: 90vh;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
 }
 
 main .highlighted-media .container {
@@ -111,7 +119,7 @@ main .highlighted-media .container .title {
 }
 
 main .highlighted-media .container .description {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 
   width: 40%;
 }
