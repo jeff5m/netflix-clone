@@ -30,6 +30,7 @@ body {
 .button {
   background-color: var(--button-color);
   border: none;
+  text-decoration: none;
   color: var(--button-text);
   outline: none;
 
